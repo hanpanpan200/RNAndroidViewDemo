@@ -1,5 +1,7 @@
 package com.rnandroidviewdemo;
 
+import com.rnandroidviewdemo.imagepicker.*;
+
 import android.app.Application;
 import android.util.Log;
 
@@ -23,7 +25,8 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage()
+          new MainReactPackage(),
+              new ImagePickerPackage()
       );
     }
   };
